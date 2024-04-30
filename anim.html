@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Properties</title>
+    <style>
+        /* Lesson 2: Selectors and properties*/
+        p{
+            color: burlywood;
+        }
+        .ex{
+            font-size: 20px;
+            color: indianred;
+        }
+        #header{
+            background-color: blanchedalmond;
+        }
+        /*lesson 3: box model & layout*/
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid rgb(243, 181, 255);
+            margin: 10px;
+            
+        }
+        .block{
+            display: block;
+        }
+        /* Lesson 6 :Transitions & animations */
+
+        button{
+            background-color: aquamarine;
+            transition: background-color 0.3s ease;
+        }
+        button:hover{
+            background-color: rgb(25, 0, 255);
+        }
+        @keyframes slide {
+            from {left: -100px;}
+            to {left: 100px;}
+            
+        }
+        div{
+            position: relative;
+            /*to start animation replace static with relative*/
+            animation: slide 2s alternate infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- lesson 1: Introduction to CSS-->
+    <h1 style="color: red;">Welcome to Css for Beginners</h1>
+<!--Lesson 2 selectors & properties-->
+    <p>This is a paragraph with <span class="ex">example </span>class.</p>
+    <div id="header">Header</div>
+    <!--Lesson 3:Box Model & layout-->
+    <div class="block">Box Model Example</div>
+<!--Lesson 4: Responsive Design & Media Queries-->
+    <p>Resize the browser to see the background color change.</p>
+<!--Lesson 5:Css Flex box and grid-->
+    <div style="display: flex;">
+        <div class="item">This is an html file. </div>
+        <div class="item">I have no youtube channel to comment </div>
+        <div class="item">I have instagram,facebook, whatsapp and many other accounts but I only use Whatspp frequently</div>
+    </div><br>
+<!--Lesson 6 :Transitionbs & animations-->
+<button>Hover Over Me!</button>
+
+<!--Lesson 7:Best Practices and Resources-->
+<p>Remember to follow best practices in life and when writing CSS code.</p>
+
+</body>
+</html>
